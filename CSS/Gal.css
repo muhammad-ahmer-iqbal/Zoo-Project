@@ -1,0 +1,27 @@
+.modal{
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.bottom{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.row img:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}

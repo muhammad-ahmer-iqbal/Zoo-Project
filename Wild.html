@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="JS\gallery.js"></script>
+	<link rel="stylesheet" href="CSS/Layout.css">
+	<link rel="stylesheet" href="CSS/Gal.css">
+	<link rel="icon" href="Images/Logo 1.2.png">
+	<title>Gallery | Wild</title>
+</head>
+<body style="background-color: rgb(255, 246, 232);">
+  <header>
+    <div class="container" style="background-color: white;">
+      <div class="col-sm-12">
+        <div>
+          <a href="index.html">
+            <img src="Images/Logo 1.2.png" alt="image" width="20%" class="col-sm-2 img-responsive" style="z-index: 30; position: absolute; margin-top: -8px;">
+          </a>
+        </div>
+        <div>
+        	<img src="Images/Header.jpg" alt="" width="100%" class="img-responsive" style="z-index: 20;">
+        </div>
+      </div>
+    </div>
+  </header>
+   <nav class="navbar" id="container-nav">
+      <div class="container" style="background-color: white;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar" id="responsive-nav-button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" style="background-color:white;" id="Navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="nav-list">Home</a></li>
+            <li><a href="About Us.html" class="nav-list">About Us</a></li>
+            <li><a href="Contact us.html" class="nav-list">Contact Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn" class="nav-list my-active">Gallery</button>
+                      <div class="dropdown-content">
+                        <a href="Birds.html">Birds</a>
+                     	<a href="Sea.html">Sea</a>
+                       	<a href="Wild.html" class="my-active">Wild</a>
+                       	<a href="Tame.html">Tame</a>
+                     </div>
+                </div>
+            </li>
+            <li><a href="Booking.html" class="nav-list">Booking</a></li>
+        </div>
+      </div>
+    </nav>
+    <section>
+		<div class="container" style="background-color: white; padding: 10px 20px;">
+			<div class="row">
+				<div class="col-sm-12 text-center" style="font-size: 50px; font-weight: bold; background-color: rgb(207, 207, 151); color: rgb(68, 68, 1);">
+					<p>Gallery</p>
+				</div>
+			</div>
+			<div>
+				<div class="row">
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/BAT.jpg" id="" class="img-responsive hover"  onclick="myFunctionW1()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/DEER.jpg"  class="img-responsive hover"  onclick="myFunctionW2()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/LION.jpg"  class="img-responsive hover"  onclick="myFunctionW3()"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/MONKEY.jpg"  class="img-responsive"  onclick="myFunctionW4()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/PANDA.jpg"  class="img-responsive"  onclick="myFunctionW5()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/RINHOCERIOUS.jpg"  class="img-responsive"  onclick="myFunctionW6()"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/SHARK.jpg"  class="img-responsive"  onclick="myFunctionW7()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/WOLF.jpg"  class="img-responsive"  onclick="myFunctionW8()"></a>
+					</div>
+					<div class="col-sm-4 bottom">
+						<a href="#myModal1" cl data-toggle="modal"><img src="Images/WILD ANIMALS/ZEBRA.jpg"  class="img-responsive"  onclick="myFunctionW9()"></a>
+					</div>
+				</div>
+			</div>
+			<div id="myModal1" class="modal fade" tabindex="-1"  role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title" id="heading"></h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<img src="" id="image" width="100%"class="img-responsive bottom">
+								</div>
+								<div class="col-sm-6">
+									<p style="text-align: justify;" id="txt"></p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid" id="container-footer">
+        <div class="col-12 container" id="subfooter1">
+          <div class="col-sm-4">
+            <p>
+              <span style="font-size: 30px; font-weight: bold;">Contact Us</span> <br>
+              <span style="font-size: 15px; font-weight: bold;">Address: </span> <span style="font-size: 15px;">abcd road, block#13, f.b. area karachi</span><br>
+              <span style="font-size: 15px; font-weight: bold;">Email: </span> <span style="font-size: 15px;">webers2001g2@gmail.com</span><br>
+              <span style="font-size: 15px; font-weight: bold;">Telephone: </span> <span style="font-size: 15px;">3465461</span><br>
+              <span style="font-size: 15px; font-weight: bold;">FAX: </span> <span style="font-size: 15px;">+1 323 555 1234</span>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              <span style="font-size: 30px; font-weight: bold;">Booking Details</span> <br>
+              <span style="font-size: 15px; font-weight: bold;">Age:</span><br>
+              <span style="font-size: 15px;">Children between 1-5 year: 50PKR</span><br>
+              <span style="font-size: 15px;">Children between 5-12 year: 100PKR</span><br>
+              <span style="font-size: 15px;">Adult: 200PKR</span><br>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              <span style="font-size: 30px; font-weight: bold;">Zoo Timing</span> <br>
+              <span style="font-size: 15px; font-weight: bold;">Monday - Friday: </span> <span style="font-size: 15px;">8a.m - 7p.m</span><br>
+              <span style="font-size: 15px; font-weight: bold;">Saturday & Sunday: </span> <span style="font-size: 15px;">9a.m - 11p.m</span><br>
+            </p>
+          </div>
+        </div>
+        <div class="container-fluid" id="subfooter2">
+          <div class="col-sm-12">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <p>© Copyright | All right reserved</p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3" style="float: right;" id="footer-links">
+              <a href="https://twitter.com/explore" target="_blank"><img src="Images/twit-icon.png" alt="twitter"></a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="Images/insta-icon.png" alt="insta"></a>
+              <a href="https://www.facebook.com/" target="_blank"><img src="Images/fb-icon.png" alt="facebook"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

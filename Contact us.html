@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="CSS\Layout.css">
+	<link rel="icon" href="Images\Logo 1.2.png">
+	<title>Contact Us Form</title>
+</head>
+<body style="background-color: rgb(255, 246, 232);">
+  <header>
+    <div class="container" style="background-color: white;">
+      <div class="col-sm-12">
+        <div>
+          <a href="index.html">
+            <img src="Images\Logo 1.2.png" alt="image" width="20%" class="col-sm-2 img-responsive" style="z-index: 30; position: absolute; margin-top: -8px;">
+          </a>
+        </div>
+        <div>
+        	<img src="Images\Header.jpg" alt="" width="100%" class="img-responsive" style="z-index: 20;">
+        </div>
+      </div>
+    </div>
+  </header>
+   <nav class="navbar" id="container-nav">
+      <div class="container" style="background-color: white;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar" id="responsive-nav-button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" style="background-color:white;" id="Navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="nav-list">Home</a></li>
+            <li><a href="About Us.html" class="nav-list">About Us</a></li>
+            <li><a href="Contact us.html" class="my-active">Contact Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn" class="nav-list">Gallery</button>
+                      <div class="dropdown-content">
+						<a href="Birds.html">Birds</a>
+                       	<a href="Sea.html">Sea</a>
+                       	<a href="Wild.html">Wild</a>
+                       	<a href="Tame.html">Tame</a>
+                     </div>
+                </div>
+            </li>
+            <li><a href="Booking.html" class="nav-list">Booking</a></li>
+        </div>
+      </div>
+	</nav>
+	<section>
+		<div class="container"  style="background-color: white; padding: 10px 20px;">
+			<div class="container">
+				<h1 class="text-center col-sm-12" style="font-size: 50px; font-weight: bold;">Form</h1>
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<form>
+					<div class="form-group">
+						<label for="fullname">Enter your full name</label>
+						<input type="text" class="form-control" name="fullname" id="fn">
+					</div>
+					<div class="form-group">
+						<label for="email">Enter your email address</label>
+						<input type="email" class="form-control" placeholder="******@****.com" name="email" id="em">
+					</div>
+					<div class="form-group">
+						<label for="msgbox">Message Box</label>
+						<textarea name="msgbox" class="form-control" cols="30" rows="10" placeholder="Enter your message here..." id="msg"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="reset" class="btn">Reset</button>
+					</div>
+					<div class="form-group">
+						<button class="btn" onclick="feedback()">Feedback</button> |
+						<button class="btn" onclick="query()">Query</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="container">
+				<h1 class="text-center col-sm-12" style="font-size: 50px; font-weight: bold;">Location</h1>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.638092767046!2d67.0210691141289!3d24.876207284046536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e40a674f1a3%3A0x87cf9326e9f15f6a!2sKarachi%20Zoo%20Park!5e0!3m2!1sen!2s!4v1592395843630!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</section>
+    <footer>
+		<div class="container-fluid" id="container-footer">
+		  <div class="col-12 container" id="subfooter1">
+			<div class="col-sm-4">
+			  <p>
+				<span style="font-size: 30px; font-weight: bold;">Contact Us</span> <br>
+				<span style="font-size: 15px; font-weight: bold;">Address: </span> <span style="font-size: 15px;">abcd road, block#13, f.b. area karachi</span><br>
+				<span style="font-size: 15px; font-weight: bold;">Email: </span> <span style="font-size: 15px;">webers2001g2@gmail.com</span><br>
+				<span style="font-size: 15px; font-weight: bold;">Telephone: </span> <span style="font-size: 15px;">3465461</span><br>
+				<span style="font-size: 15px; font-weight: bold;">FAX: </span> <span style="font-size: 15px;">+1 323 555 1234</span>
+			  </p>
+			</div>
+			<div class="col-sm-4">
+			  <p>
+				<span style="font-size: 30px; font-weight: bold;">Booking Details</span> <br>
+				<span style="font-size: 15px; font-weight: bold;">Age:</span><br>
+				<span style="font-size: 15px;">Children between 1-5 year: 50PKR</span><br>
+				<span style="font-size: 15px;">Children between 5-12 year: 100PKR</span><br>
+				<span style="font-size: 15px;">Adult: 200PKR</span><br>
+			  </p>
+			</div>
+			<div class="col-sm-4">
+			  <p>
+				<span style="font-size: 30px; font-weight: bold;">Zoo Timing</span> <br>
+				<span style="font-size: 15px; font-weight: bold;">Monday - Friday: </span> <span style="font-size: 15px;">8a.m - 7p.m</span><br>
+				<span style="font-size: 15px; font-weight: bold;">Saturday & Sunday: </span> <span style="font-size: 15px;">9a.m - 11p.m</span><br>
+			  </p>
+			</div>
+		  </div>
+		  <div class="container-fluid" id="subfooter2">
+			<div class="col-sm-12">
+			  <div class="col-sm-1"></div>
+			  <div class="col-sm-5">
+				  <p>© Copyright | All right reserved</p>
+			  </div>
+			  <div class="col-sm-3"></div>
+			  <div class="col-sm-3" style="float: right;" id="footer-links">
+				<a href="https://twitter.com/explore" target="_blank"><img src="Images\twit-icon.png" alt="twitter"></a>
+				<a href="https://www.instagram.com/?hl=en" target="_blank"><img src="Images\insta-icon.png" alt="insta"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="Images\fb-icon.png" alt="facebook"></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	<script>
+		function feedback(){
+			if((document.getElementById('fn').value!="") & (document.getElementById('em').value!="") & (document.getElementById('msg').value!=""))
+			window.alert("Your Feedback has been submitted.");
+			else
+			window.alert("Please fill the form.");
+		}
+
+		function query(){
+			if((document.getElementById('fn').value!="") & (document.getElementById('em').value!="") & (document.getElementById('msg').value!=""))
+			window.alert("Your Query has been submitted.");
+			else
+			window.alert("Please fill the form.");
+		}
+	</script>
+</body>
+</html>
